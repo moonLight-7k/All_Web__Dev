@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes | JavaScript</title>
+  </head>
+
+  <body style="background-color: black">
+    <h1 style="color: white">Hello World!</h1>
+  </body>
+  <script>
+    // DECLARING  A CLASS
+    class Product {
+        constructor(itemNAme, price, discount, productCode) {
+            this.itemNAme = itemNAme
+        //         (this.price = price),
+        //         (this.discount = discount),
+        //         (this.productCode = productCode);
+        }
+        getItemName(){
+            return this.itemNAme + ' is a product';
+        }
+    }
+    class Furniture extends Product {
+        constructor(itemNAme){
+            super(itemNAme);
+
+        }
+        getItemName(){
+            return this.itemNAme + ' is a product';
+        }
+    }
+    let pencil = new Product("Pencil", 20, 3, "P11");
+    let chair = new Furniture('chair', 499, 15, "C11")
+
+
+    
+    // const Product_1 = class  {
+    //     constructor(itemNAme, price, discount, productCode) {
+    //         (this.itemNAme = itemNAme),
+    //             (this.price = price),
+    //             (this.discount = discount),
+    //             (this.productCode = productCode);
+    //     }
+    //     get getDiscountValue(){
+    //         return this.discount ;
+    //     }
+    //     set setDiscountValue(value){
+    //         this.discount= value;
+    //     }
+    //     discountValue(){
+    //         return this.discount* this.price/100
+
+    //     }
+    // };
+
+    // let chair = new Product_1('chair', 499, 15, "C11")
+  </script>
+</html>

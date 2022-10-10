@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* background: linear-gradient(to bottom, #006666 0%, #66ff99 100%); */
+  /* background-repeat: no-repeat; */
+}
+
+body {
+  background: rgb(25, 23, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 23, 23, 1) 0%,
+    rgba(141, 111, 3, 0.896) 47%,
+    rgba(22, 16, 4, 1) 99%
+  );
+
+  /* font-family: "Bitter", serif;
+  font-family: "Combo", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Satisfy", cursive;
+*/
+}
+
+.logo img {
+  height: 100%;
+  width: 110px;
+  height: auto;
+  border-radius: 5rem;
+  margin-left: 46%;
+  margin-top: 2rem;
+}
+
+.container {
+  background-color: rgb(215, 190, 3);
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 1rem;
+  justify-content: center;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 1rem;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+.msg_right {
+  font-size: larger;
+  padding: 20px;
+  /* text-align: right; */
+  float: right;
+}
+
+.msg_left {
+  padding: 1rem;
+  font-size: larger;
+  /* text-align: left; */
+  float: left;
+}
+
+.send {
+  text-align: center;
+  /* width: 70%; */
+}

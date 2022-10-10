@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript_Tutorial</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(51, 49, 49);
+      color: aliceblue;
+    }
+  </style>
+
+  <body>
+    <h2 id="head">JavaScript</h2>
+
+    <script>
+      let students = `[
+  {
+    "name": "Suhel",
+    "age": 19,
+    "height": 155
+  },
+  {
+    "name": "Son",
+    "age": 29,
+    "height": 170
+  }
+]`
+
+
+      console.log(JSON.parse(students)[1].age);
+    </script>
+
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

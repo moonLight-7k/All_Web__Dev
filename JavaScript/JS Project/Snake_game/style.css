@@ -1,0 +1,31 @@
+body{
+      background-color: black;
+}
+#gameContainer{
+      text-align: center;
+
+}
+.gameBoard{
+      border: 4px solid white;
+      background-color: rgb(98, 90, 90);
+
+}
+#scoreText{
+      font-family: "Permanent Marker", cursive;
+      font-size: 100px;
+      color: greenyellow;
+}
+#resetBtn{
+      font-family: "Permanent Marker", cursive;
+      font-size: 22px;
+      width:100px;
+      height: 50px;
+      border: 3px solid red;
+      border-radius: 8px;
+      cursor: pointer;
+      color:red;
+}
+#resetBtn:hover{
+      color: white;
+      background-color: red;
+}

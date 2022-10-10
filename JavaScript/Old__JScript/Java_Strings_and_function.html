@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JvaScript | Strings and Function</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Hello World!</h2>
+    </div>
+
+    <script>
+      var str = "This is a String";
+      console.log(str);
+
+      var position = str.indexOf("is");
+      console.log(position);
+
+      position = str.lastIndexOf("is");
+      console.log(position);
+
+      //   var substr = str.slice(1, 5);
+      //   var substr = str.substring(1,7);
+
+      var substr = str.substr(0, 7);
+      console.log(substr);
+
+      // var replace = str.replace("String", "Igris");
+      // console.log(replace);
+
+      // console.log(str.toUpperCase());
+      // console.log(str.toLowerCase());
+
+      // var  newString  = str.concat(' New String');
+      // console.log(newString);
+
+      // var strspace = "    this contains      whitespaece  ";
+      // console.log(strspace);
+      // console.log(strspace.trim());
+
+      // var char3 = str.charAt(2);
+      var char3 = str.charCodeAt(2);
+
+      console.log(char3);
+    </script>
+  </body>
+</html>

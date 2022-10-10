@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to left, #2b2d2ee1 0%, #e0e0e0d8 80%);
+}
+.time {
+  background-color: rgb(27, 26, 26);
+  border: 2px solid white;
+  border-radius: 9px;
+}
+#time-display {
+  font-size: 140px;
+  color: greenyellow;
+  text-align: center;
+}
+.btn {
+  padding: 1rem;
+  text-align: center;
+}
+.timerBtn:hover {
+  background-color: white;
+  color: black;
+}
+.timerBtn {
+  font-family: consolas, monospace;
+  font-size: 25px;
+  width: 110px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 7px;
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
+}
+#time-container {
+  border: 1px solid white;
+  padding: 2rem;
+  background-color: rgb(34, 32, 32);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1014px) {
+  #time-display {
+    font-size: 80px;
+    text-align: center;
+  }
+  .timerBtn {
+    font-size: 22px;
+    width: 90px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #time-display {
+    font-size: 65px;
+    text-align: center;
+  }
+  .timerBtn {
+    font-size: 20px;
+    width: 75px;
+    height: 42px;
+  }
+  
+}

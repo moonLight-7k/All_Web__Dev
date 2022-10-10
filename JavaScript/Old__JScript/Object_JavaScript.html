@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Object | JavScripts</title>
+</head>
+
+<body style="background-color: black">
+  <h1 style="color: aliceblue">Hello World!</h1>
+</body>
+
+<script>
+  // let lecture = 10;
+  // let section = 3;
+  // let title = "JavaScript";
+
+  // const course= {
+  //     lecture:10,
+  //     section: 3,
+  //     title: 'JavaScript',
+  //     notes: {
+  //         introduction: "Welcome to JS course"
+  //     },
+  //     enroll(){
+  //         console.log('You are successfully enrolled');
+  //     }
+  // }
+  // course.enroll();
+  // console.log(course);
+
+  // course.price = 999;
+
+  //FACTORY FUNCTION
+  // function createCourse() {
+  //   const course = {
+  //     lecture: 10,
+  //     section: 3,
+  //     title: "JavaScript",
+  //     notes: {
+  //       introduction: "Welcome to JS course",
+  //     },
+  //     enroll() {
+  //       console.log("You are successfully enrolled");
+  //     },
+  //   };
+  //   return course;
+  // }
+  // const course = createCourse('JavaScript');
+  // course.enroll();
+  // console.log(course);
+
+  // const newCourse = createCourse("Javascript");
+
+  // // CONSTRUCTION FUNCTION
+  // function Course(title) {
+  //   (this.title = title),
+  //     (this.enroll = function () {
+  //       console.log("Your successfully enrolled");
+  //     });
+  // }
+
+  // const course = new Course("JavaScript");
+  // delete course.title;
+  // course.enroll();
+
+  //    course.checkEnrollment = function(){
+  //        console.log('30 users are enrolled');
+  //    }
+  //    console.log(course);
+
+  // console.log(course.constructor);
+  // console.log(newCourse.constructor);
+
+  // const course = 'Something'
+
+  // const Course_1 = new Function(
+  //   "title",
+  //   `
+  // this.title = title,
+  // this.enroll = function (){
+  //     console.log('Your successfully enrolled');
+  // }
+  // `
+  // );
+
+  // const course_2 = new Course_1('JavaScript');
+  // course_2.enroll();
+
+  // PRIMITIVE DATA TYPE
+  // let number = 10;
+
+  // PASS BY VALUE
+  // let number_2 = number;
+  // number = 15;
+
+  // console.log(number);
+  // console.log(number_2);
+
+  // REFRENCE DATATYPE
+  // let obj = { number: 10 };
+  //PASS BY REFERENCE
+  // let obj_2 = obj;
+  // obj.number = 15;
+
+  // console.log(obj);
+  // console.log(obj_2);
+
+  const course = {
+    title: "Javascript",
+    enroll() {
+      console.log("your now successfully enrolled");
+    }
+  }
+
+  // const course_1 = { ...course}
+  // course_1.title = 'c++'
+
+  // const course_1 = Object.assign({}, course)
+  //   course_1.title = 'c++'
+
+    // for (let key in course){
+    //   console.log(key, course[key]);
+    // }
+
+const course_1 = {};
+for (let key of Object.keys(course)){
+  //  console.log(key, course[key]);
+  course_1[key] = course[key]
+}
+
+</script>
+
+</html>

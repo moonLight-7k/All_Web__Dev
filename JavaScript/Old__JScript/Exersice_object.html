@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise | Object </title>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+</body>
+<script>
+
+    const product = {
+        itemName: 'Flower',
+        price: 50,
+        discount: 20,
+        itemCode: 'F40'
+    }
+
+
+    function createProduct(name, price, discount, itemCode) {
+        return {
+            itemName: name,
+            price: price,
+            discount: discount,
+            itemCode: itemCode
+        }
+    }
+
+    const football = createProduct('football', 500, 10, 'F30');
+
+    function Product(name, price, discount, itemCode) {
+        this.itemName = name;
+        this.price = price;
+        this.discount = discount;
+        this.itemCode = itemCode;
+        this.discountValue = function () {
+            return price * discount / 100;
+        }
+    }
+
+    const mobile = new Product("OnePlus Nord", 30000, 5, "OP50")
+
+
+
+
+
+</script>
+
+</html>

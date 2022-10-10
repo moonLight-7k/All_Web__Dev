@@ -1,0 +1,33 @@
+.cell{
+      width: 75px;
+      height: 75px;
+      border: 2px solid black;
+      box-shadow: 0 0 0 2px;
+      line-height: 75px;
+      font-size: 50px;
+      cursor: pointer;
+
+}
+
+.game-container{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+      text-align: center;
+}
+.cell-container{
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      width: 225px;
+      margin: auto;
+}
+
+#restart-btn{
+      padding: 5px;
+      font-size: 20px;
+      background-color: rgb(20, 17, 17);
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+}
+#restart-btn:hover{
+      color: black;
+      background-color: white;
+}

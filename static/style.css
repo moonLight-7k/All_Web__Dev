@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Pacifico&family=Titillium+Web:wght@300&display=swap");
+
+* {
+  transition: var(--transition);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin-left: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+:root {
+  --transition: all 500ms ease;
+}
+
+.line {
+  height: 1px;
+  background-color: white;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 3rem;
+}
+h3 {
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.navbar ul div p {
+  padding-right: 690px;
+  padding-top: 30px;
+  padding-left: 25px;
+  color: black;
+  font-weight: 900;
+  font-size: 35px;
+  font-family: "Combo", cursive;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  padding: 13px, 14px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: linear-gradient(to bottom left, #ff9900 -1%, #d50000 100%);
+}
+
+.navbar li {
+  list-style: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.navbar li a {
+  color: white;
+  font-weight: 900;
+
+  text-decoration: none;
+  padding: 15px;
+  font-size: 23px;
+  color: black;
+  transition: var(--transition);
+}
+
+.navbar ul li a:hover {
+  color: whitesmoke;
+}
+
+#introSection {
+  background: url(bg.gif), center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  box-shadow: 1px -7px 100px -15px rgb(211 13 13);
+}
+
+.intro {
+  /* color: -webkit-linear-gradient(rgb(160, 57, 57), rgb(148, 13, 130)); */
+  font-family: "Combo", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 399px;
+  font-size: 65px;
+  align-items: center;
+  font-weight: 900;
+  transition: var(--transition);
+}
+.introP {
+  background-color: linear-gradient(to right, #0000 0%, #cc3300 0%);
+  font-family: "Combo", cursive;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.intro:hover,
+.introP:hover {
+  color: white;
+}
+
+#mission {
+  height: 326px;
+  background-color: black;
+  height: 500px;
+  /* box-shadow: 140px -7px 100px -15px rgb(211 13 13); */
+}
+#card {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.card {
+  opacity: 0.4;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 30%;
+  margin: 23px 20px;
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #8f1212 -1%, #e7d31e 100%);
+  transition: var(--transition);
+}
+.card:hover {
+  /* background: linear-gradient(from bottom left, #000000 -1%, #6c1148 100%); */
+  opacity: 1;
+}
+
+.card-img img {
+  height: 195px;
+  padding: 1rem;
+}
+.card-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-content p {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#sponsorSection {
+  background-color: black;
+  height: 30rem;
+  text-align: center;
+}
+
+.sponsor-img {
+  padding-top: 5rem;
+}
+
+.sponsor-img img {
+  height: 200px;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 7px;
+  text-align: center;
+  color: white;
+}
+.myForm {
+  margin-left: 28rem;
+  margin-right: 28rem;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.myForm textarea {
+  font-family: "Combo", sans-serif;
+  text-align: center;
+  font-size: 23px;
+  margin: 6px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+#myinput {
+  font-family: "Combo", sans-serif;
+  padding: 5px;
+  font-size: 23px;
+  text-align: center;
+  margin: 6px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+.btn {
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-left: 13rem;
+  margin-right: 14rem;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  /* padding-right: 15px; */
+  /* padding: 7px; */
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
+  background: black;
+  border-radius: 10px;
+}
+.non {
+  background: linear-gradient(to bottom, #010101 -1%, #f4f2f2 100%);
+  padding: 1.5rem;
+}
+.gap{
+  height: 2px;
+  background: rgba(0, 0, 0, 0.773);
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: var(--transition);
+}

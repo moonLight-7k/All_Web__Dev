@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays | JavaScript</title>
+</head>
+
+<body style="background-color: black">
+    <h1 style="color: white">Hello World!</h1>
+</body>
+
+<script>
+const num =  new Array(1, 2, 3, 4, 5, 6, 7, 8, 9 );
+// PUSH
+// num.push(10)
+
+
+// UNSHIFT
+// num.unshift(0)
+
+//POP
+// num.pop()
+
+//SHIFT
+// num.shift()
+
+num[0] = {num:80}
+// console.log(num);
+
+const names = ['amal', 'arun', 'ram', "harry", 'arun']
+// names.indexOf('arun')
+
+name.includes("arun")
+
+let channels = [{
+    name: 'codex',
+    num: 10000},
+    {
+    name: 'codex2',
+    num: 2000},
+    {
+    name: 'codex3', 
+    num: 3000}
+
+];
+
+// console.log(channels.find(function(element){
+// return element.num === 2000
+// }));
+
+// console.log(channels.find(element => element.name === 'codex3'
+// ));
+
+let names1 = ['amal', 'arun', 'ram', "harry", 'arun']
+names2 = ['amal', 'arun',  "harry", 'yash']
+// names3 = names1.concat(names2)
+// console.log(names1.concat(names2));
+let names3 = [...names1,...names2]
+
+// console.log(names3.slice(3,5));
+
+// console.log(names3);
+
+
+// FOR LOOP
+
+// for(let i = 0; i<names.length;i++){
+    // console.log(names[i]);
+// }
+
+// FOR OFF
+// for (let name of names){
+//     console.log(name);
+// }
+
+//FOR EACH
+// names.forEach(function(name,index){
+//        console.log(name,index);
+// })
+
+//JOIN
+
+let student = ['s', 'h', 'i', 'v', 'a']
+// console.log(student.join('_'));
+student = student.join('_');
+
+//SPLIT
+// console.log(student.split('_'));
+
+
+let cities  = [
+    {name: 'Mumbai', population: 3243245},
+    {name: 'Delhi', population: 9234974},
+    {name: 'Bangalore', population: 2309645},
+    {name: 'Chennai', population: 9890879},
+    {name: 'Lucknow', population: 3565545}
+
+];
+// console.log(cities.filter(city => city.population > 3000000));
+//MAP METHOD
+console.log(cities.map(city => city.population * 2));
+
+</script>
+
+</html>

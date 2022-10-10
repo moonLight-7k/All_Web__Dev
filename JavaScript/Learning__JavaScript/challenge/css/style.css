@@ -1,0 +1,52 @@
+.container-1 {
+  border: 3px solid black;
+  padding: 4px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.flex-box-container-1 {
+  display: flex;
+  border: 2px solid black;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-box-container-1 div {
+  padding: 0.5rem;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.result {
+  padding: 1rem;
+}
+
+
+.container-2 {
+  border: 1px solid  red;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.flex-box-container-2 {
+  display: flex;
+  border: 2px solid violet;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-box-container-2 img{
+  border: 2px solid greenyellow;
+  padding: 8px;
+  width: 30%;
+  height: auto;
+margin: 10px;
+}

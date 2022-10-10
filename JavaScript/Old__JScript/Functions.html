@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui?</h1>
+  </body>
+  <script>
+    //     function cookMmaggi(maggi, water, tapeli){
+    //     console.log("Your maggi will be ready in " +maggi*2 +
+    //     " minutes" + "and ingredients used are:- " + maggi +"-Maggi" + " using "+ tapeli +"-Tapeli");
+    // }
+    // cookMmaggi(4, 8, 1);
+
+    let Bread = prompt("Choose the bread ");
+    let Veggies = prompt("Choose the Veggies ");
+    let Sauce = prompt("Choose the Sauce ");
+
+    function makeSandwich(Bread, Veggies, Sauce) {
+    let sandwich = Bread + " Bread " + Veggies + " Veggies "+ Sauce + " Sauce" +" Sandwich is ready";
+    return sandwich
+        
+    }
+    let vegSandwich = makeSandwich(Bread,Veggies,Sauce);
+    console.log(vegSandwich);
+    
+  </script>
+</html>

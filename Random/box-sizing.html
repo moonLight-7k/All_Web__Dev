@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        /* div{
+            width: 160px;
+            height: 80px;
+            padding: 20px;
+            border: 8px solid rgb(252, 0, 0);
+            background-color: gold;
+        }
+
+        .content-box{
+            box-sizing: content-box;
+        }
+        .border-box{
+            box-sizing: content-box;
+        } */
+        div#layer1{
+            z-index: 2;
+            position: absolute;
+            top: 25px;
+            left: 8px;
+            width:250px ;
+            height: 120px;
+            background-color: rgb(238, 208, 38);
+            border: 2px solid rgb(217, 255, 0);
+            padding: 10px;
+            
+            
+        }
+        div#layer2{
+            z-index: 1;
+            position: absolute;
+            top: 65px;
+            left: 35px;
+            width:250px ;
+            height: 120px;
+            background-color: rgb(255, 51, 0);
+            border: 2px solid rgb(39, 24, 24);
+            padding: 10px;
+        }
+
+        div#layer3{
+            z-index: -7;
+            position: absolute;
+            top: 95px;
+            left: 70px;
+            width:250px ;
+            height: 120px;
+            background-color: rgb(252, 2, 210);
+            border: 1px solid rgb(0, 255, 115);
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="content-box">Content Box</div>
+    <br>
+    <div class="border-box">Border Box</div> -->
+    <div id="layer1">
+        <h1>Programming code example</h1>
+    </div>
+    <div id="layer2">
+        <h1>Programming code example</h1>
+    </div>
+    <div id="layer3" >
+        <h1 >Programming code example</h1>
+    </div>
+</body>
+</html>

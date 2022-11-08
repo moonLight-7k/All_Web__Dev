@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details and Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <form action="">
+        <h1>User Details</h1>
+        <p>Name:- <input type="text" required name="name" > </p>
+        <p>
+            <p>Gender:-  Male <input type="radio" required> 
+                Female <input type="radio" required> </p> 
+            
+        </p>
+       <p>
+           Address:- <textarea name="addresss" id="address" cols="83" rows="9" placeholder="Input your address" ></textarea> </p>
+           <p>Email: <input type="email" name="email" id="email" required placeholder="alex@xyz.com"></p>
+           <p>Pincode <input type="number" id="pincode" name="pincode required"></p>
+
+           <h2>Payment Information</h2>
+
+           <p> Card Type:-
+               <select name="card-type" id="card_type" required > 
+                  <option value="">--Select Card Type--</option>
+                  <option value="rupay">Rupay</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="visa">VISA</option>
+
+               </select>
+                       
+           </p>
+
+           <p>Card Number:-  <input type="number" id="card_number" name="card_number" required placeholder="XXXX-XXXX-XXXX-XXXX" > </p>
+           <p>Expiration Date:- <input type="date" name="date" id="date" required> </p>
+           <p>CVV:- <input type="password"> </p>
+
+           <p><input type="Pay Now" name="Pay now"></p>
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+*{margin: 0%;}
+
+.parent{
+    display: flex;
+}
+
+
+.child{
+    display: content;
+    flex-direction: column;
+    width: 100%;
+}

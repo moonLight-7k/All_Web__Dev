@@ -1,0 +1,93 @@
+.box1{
+     
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 4%;     
+}
+.box2{
+     
+    background-color: rgb(22, 16, 16);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius:4%;     
+}
+.box3{
+     
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 14%;     
+}
+.box4{
+     
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 14%;     
+}
+.box5{
+     
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 14%;     
+}
+.box6{
+     
+    background-color: rgb(59, 59, 59);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 14%;     
+}
+
+.content{
+    text-align: center; 
+}
+#bx1,#bx2,#bx3,#bx4,#bx5,#bx6{
+            width: 15%;
+            height: 25%;
+           padding: 35px 0 35px 0;
+            float: left;
+            clear: none;
+}
+ 
+.head1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(190, 106, 123);
+    /* text-decoration: underline  #FF3028; */
+    background-color: blanchedalmond;
+    border-radius: 40px;
+    border-color: solid rgb(175, 40, 40);
+    padding: 25px;
+    
+    
+
+}
+/* .head2{s
+       text-align: center;  
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+       color: darksalmon;
+
+} */
+@media all and (max-width: 700px) { 
+    #bx1,#bx2,#bx3,#bx4,#bx5,#bx6
+    {
+        width:33.3%;
+    }
+}
+
+@media all and (max-width: 550px) { 
+    #bx1,#bx2,#bx3,#bx4,#bx5,#bx6
+    {
+        width:50%;
+    }
+}
+
+@media all and (max-width: 400px) { 
+    #bx1,#bx2,#bx3,#bx4,#bx5,#bx6
+    {
+        width:97%;
+    }
+}

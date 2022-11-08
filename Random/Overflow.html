@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        /* .box{
+            border: 2px solid rgba(13, 245, 225, 0.979);
+            width: 200px;
+            height: 100px ;
+        } 
+        .word{ 
+            border: 4px solid black;
+            font-size:200% ;
+            width: 105px;
+            overflow: auto; 
+         } */
+        .box {
+            width: auto;
+            height: auto ;
+            border: 8px solid black;
+            margin: 8px;
+            
+        } 
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">This box has a height and width. This means that if there is too much content to be displayed within the assigned height, there will be an overflow situation. If overflow is set to hidden then any  overflow will not be visible</div>
+    <p>This content is outside of the box.</p> -->
+    <!-- <Div class="word">Overflow </Div> -->
+    <div class="wrapper">
+        <div class="box"> <img src="./Image/img_02.jpg" alt="image1"> </div>
+        <div class="box"> <img src="./Image/img_06.jpg" alt="image2"> </div>
+    </div>
+</body>
+</html>

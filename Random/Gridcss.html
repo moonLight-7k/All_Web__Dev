@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px, auto);
+            grid-auto-columns: minmax( 50px,auto);
+            column-gap: 20px;
+            row-gap: 20px;
+
+        }
+        .item{
+            background-color: rgb(255, 230, 5);
+            border-radius: 10px;
+            border: 3px solid rgb(0, 0, 0); 
+        }
+        #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-end: 3;
+        }
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+        .item1_container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            
+        }
+        .nested-item{
+            border:3px solid rgb(168, 168, 168);
+            border-radius: 3px ;
+            background-color: rgb(204, 22, 22);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" item item1_container" id="item-1">
+            <div class="nested-item">InBox 1</div>
+            <div class="nested-item">InBox 2</div>
+            <div class="nested-item">InBox 3</div>
+        </div>
+        <div class="item" id="item-2">Box 2</div>
+        <div class="item" id="item-3">Box 3</div>
+        <div class="item" id="item-4">Box 4</div>
+        <div class="item" id="item-5">Box 5</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://cdpn.io/Subhodeephemrom/fullpage/gOWegjj -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - challenge #5</title>
+  
+  
+  
+  
+<style>
+/* first of all changing each div of class named "one" display from default to flex */
+.one{
+display: flex;
+}
+/* styling boxes of each row */
+.one div{
+    padding: 10px;
+    /* using flex-grow:1 function, boxes in each row are growing relatively to each other */
+    flex-grow: 1;
+    font-size: larger;
+    margin: 3px;
+    border-radius: 5px;
+    color: blanchedalmond;
+    background-color: red;
+}
+/* Changing each div of nested class named "li" display from default to flex by the way it is inside div "one' first row-> first box*/
+div.l1{
+    display:flex;
+    padding: 0px;
+}
+/* styling boxes of nested class named "l1" */
+.l1 div{
+    /* using flex-grow:1 function, boxs of nested class named "l1" are growing relatively to each other */
+    flex-grow: 1;
+    background-color: black;
+}
+/* CSS of Challenge #5 Completed. */
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  
+    <!-- Hello World. This is challenge #5 -->
+    <!-- For each row I am creating a div section consisting of class named "one"  -->
+    <!-- I am also creating each box using div with no specific class. -->
+    <div class="one">
+        <!-- First row -->
+        <div>
+            1
+            <!-- Creating the nested div section inside box 1 -->
+            <!-- nested div section of class named "l1" -->
+            <div class="l1">
+                <!-- First row of nested div -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="l1">
+                <!-- Second row of nested div section -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="l1">
+                <!-- Third row of nested div section -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>   
+            </div>
+        </div>    
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="one">
+        <!-- Second row -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="one">
+        <!-- Third row -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <!-- please also visit my css code -->
+    <!-- Challenge #5 Completed -->
+    <!-- Thank you so much Aman Bhaiya and Apni Kaksha team for this beautiful challenge. Learned so much things. Continue the Good work. we all very much support apni kaksha team. Apni kaksha JINDABAAD-->
+
+  
+  
+  
+  
+
+
+
+
+ 
+</body></html>

@@ -1,0 +1,17 @@
+h2,h3{
+    color: rgb(192, 128, 31);
+}
+h4,h1{
+    color: rgb(30, 33, 210);
+
+}
+.two,.one{
+    color: rgb(28, 248, 28);
+    font-weight: bolder;
+}
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1+p{
+    font-style: italic;
+}

@@ -1,0 +1,126 @@
+#head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(7, 12, 77, 0.774);
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(55, 0, 255, 0.733);
+    border-radius: 12px;
+    padding: 50px;
+   
+}
+.headd{
+    top: 10px;
+}
+
+.bars{
+    position:sticky;
+    background-color: rgb(68, 0, 255);
+    color:rgba(55, 0, 255, 0.733);
+    padding: 14px;
+    border-radius: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 1px;
+}
+.bars{
+    top: 1px;
+}
+
+a:hover{
+    font-size: 150%;
+    background-color: rgba(55, 0, 255, 0.733);
+    
+}
+#home{
+    color: rgb(5, 5, 4);
+    font-size: 20;
+    padding: 18px;
+    
+}
+ #img1,#img2,#img3,#img4{
+     width:80px ;
+     height: 80px;
+     border-radius: 50%;
+
+ }
+ #img1,#img3{
+     float: right;
+     margin: 7px;
+     padding: 7px;
+     
+     
+ }
+ #img2,#img4{
+     float: left;
+     margin: 7px;
+     padding: 7px;
+ }
+ #img1{
+     background-color: rgba(255, 6, 6, 0.651);
+     
+ }
+ #img2{
+     background-color: orangered;
+}
+#img3{
+    background-color: purple;
+}
+#img4{
+    background-color: gray;
+}
+.para1{
+    font-style: oblique;
+    color: red;
+    background-color: rgb(41, 37, 37);
+    padding: 18px;
+    border-radius: 7px;
+    margin: 4px;
+}
+.para2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: orangered;
+    background-color:rgb(80, 73, 80);
+    padding: 19px;
+    border-radius: 8px;
+    margin: 4px;
+}
+.para3{
+    font-family: sans-serif;
+    color: rgb(197, 30, 197) ;
+    background-color: yellow;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 4px;
+}
+.para4{
+    font-family: cursive;
+    color: gray;
+    background-color: pink;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 4px;
+
+}
+.all{
+    background-color: rgba(149, 208, 231, 0.822);
+ }
+ 
+ /* @media screen and (max-width: 550px), screen and (orientation: landscape){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 450px), screen and (orientation: landscape){
+    body{
+        font-size: 8px;
+    }
+    img{
+        size: 10%;
+    }
+
+}
+@media screen and (max-width: 350px), screen and (orientation: landscape){
+    body{
+        font-size: 5px;
+    }
+
+} */

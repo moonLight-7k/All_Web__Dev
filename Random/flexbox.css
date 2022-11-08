@@ -1,0 +1,74 @@
+.main{
+    background-color: rgba(218, 27, 224, 0.733);
+}
+
+/* first of all changing each div of class named "one" display from default to flex */
+.one{
+    display: flex;
+    }
+    /* styling boxes of each row */
+    .one3{
+        display: flex;
+        padding: 3px;
+    }   
+    .one3 div{
+        padding: 5px;
+        flex-grow: 1;
+        font-size: larger;
+        margin: 4px;
+        border-radius: 7px;
+        color: rgb(0, 0, 0);
+        background-color: rgba(87, 223, 216, 0.815);
+
+    }
+    .one4{
+        display: flex;
+    }
+    .one4 div{
+        padding: 5px;
+        flex-grow: 2;
+        font-size: larger;
+        margin: 4px;
+        border-radius: 7px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(72, 153, 149);
+
+    }
+
+    .one5{
+        display: flex;
+    }
+    .one5 div{
+        padding: 5px;
+        flex-grow: 3;
+        font-size: larger;
+        margin: 4px;
+        border-radius: 7px;
+        color: rgb(0, 0, 0);
+        background-color: rgba(89, 122, 121, 0.767);
+
+    }
+
+    
+    .one div{
+        padding: 9px;
+        /* using flex-grow:1 function, boxes in each row are growing relatively to each other */
+        flex-grow: 1;
+        font-size: larger;
+        margin: 4px;
+        border-radius: 7px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(33, 230, 220);
+    }
+    /* Changing each div of nested class named "li" display from default to flex by the way it is inside div "one' first row-> first box*/
+    div.l1{
+        display:flex;
+        padding: 1px;
+    }
+    /* styling boxes of nested class named "l1" */
+    .l1 div{
+        /* using flex-grow:1 function, boxs of nested class named "l1" are growing relatively to each other */
+        flex-grow: 1;
+        background-color: rgb(119, 0, 255);
+    }
+    /* CSS of Challenge #5 Completed. */

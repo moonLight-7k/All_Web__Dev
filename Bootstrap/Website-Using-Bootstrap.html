@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+       rel="stylesheet" 
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous" 
+    /> -->
+    <link rel="stylesheet" href="CSSofBoot.css">
+
+    <title>CoDeX/Home</title>
+  </head>
+
+  <body>
+    <!-- the nav bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="font-size: 88%; background-color: blueviolet"
+    >
+      <div class="container-fluid">
+        <!-- the nav title  -->
+        <a
+          class="navbar-brand"
+          href="./Website-Using-Bootstrap.html"
+          style="font-size: 170%; color: rgb(255, 255, 255)"
+        >
+          CoDeX
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- the home  -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Website-Using-Bootstrap.html"
+                >Home</a
+              >
+            </li>
+            <!-- the dropdown  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Support</a>
+                  <a class="dropdown-item" href="#">Write for us</a>
+                </li>
+              </ul>
+            </li>
+            <!-- the about -->
+            <li class="nav-item">
+              <a class="nav-link" href="./About-bootstrap.html">About </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact_us.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <div class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</div>
+          <div class="btn btn-success mx-0" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</div>
+        </div>
+      </div>
+    </nav>
+
+   
+
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LoginModalLabel">Login to CoDeX</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" >Email</label>
+            <div class="col-sm-10" >
+              <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          
+          
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SignUp Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SignUpModalLabel">Create a new account </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+        <form>
+          <div class="row mb-3 ">
+            <label for="inputName" class="col-sm-5 col-form-label" >Name</label>
+            <div class="col-sm-10" >
+              <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-5 col-form-label" >Email</label>
+            <div class="col-sm-10" >
+              <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-5 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+
+              
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-5 col-form-label"> Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+
+              
+            </div>
+          </div>
+          
+          
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- The carousel for stater  -->
+    <div
+      id="carouselExampleCaptions-Fade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!-- first carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="  Images/img-010.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: rgb(255, 255, 255); font-size: 300%">
+              <b>Welcome! To CoDeX</b>
+            </h1>
+            <p
+              style="
+                color: rgb(245, 245, 245);
+                font-size: 150%;
+                /* background-color: rgba(0, 0, 0, 0.507); */
+              "
+            >
+              This is the best place to test code for all age-group
+            </p>
+
+            <button
+              style="
+                padding: 3px;
+
+                background-color: rgb(226, 37, 37);
+                border-radius: 10px;
+              "
+            >
+              Explore
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(238, 235, 78);
+                border-radius: 10px;
+              "
+            >
+              Learn
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(16, 197, 0);
+                border-radius: 10px;
+              "
+            >
+              Shop
+            </button>
+          </div>
+          <!-- second carousel -->
+        </div>
+        <div class="carousel-item">
+          <img src="Images/img-9.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: rgb(255, 255, 255); font-size: 300%">
+              The Best Coding Blog
+            </h1>
+            <p
+              style="
+                color: rgb(255, 255, 255);
+                font-size: 150%;
+                /* background-color: rgba(146, 119, 119, 0.507); */
+              "
+            >
+              Content for every profession and it`s open source
+            </p>
+            <button
+              style="
+                padding: 3px;
+
+                background-color: rgb(226, 37, 37);
+                border-radius: 10px;
+              "
+            >
+              Explore
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(238, 235, 78);
+                border-radius: 10px;
+              "
+            >
+              Learn
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(16, 197, 0);
+                border-radius: 10px;
+              "
+            >
+              Shop
+            </button>
+          </div>
+          <!-- third carousel -->
+        </div>
+        <div class="carousel-item">
+          <img src="Images/img-8.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color: white; font-size: 300%">Mangement System</h1>
+            <p
+              style="
+                color: white;
+                font-size: 150%;
+                /* background-color: rgba(0, 0, 0, 0.507); */
+              "
+            >
+              You can manage your website, team and projects etc. for free
+            </p>
+            <button
+              style="
+                padding: 3px;
+
+                background-color: rgb(226, 37, 37);
+                border-radius: 10px;
+              "
+            >
+              Explore
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(238, 235, 78);
+                border-radius: 10px;
+              "
+            >
+              Learn
+            </button>
+            <button
+              style="
+                padding: 3px;
+                background-color: rgb(16, 197, 0);
+                border-radius: 10px;
+              "
+            >
+              Shop
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions-Fade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previwe</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions-Fade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cards stater -->
+    <div class="container my-5">
+      <!-- first card -->
+      <div class="row mb-2">
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Explore</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Benefits & Careers</font
+                  ></font
+                >
+              </h3>
+
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"><br /> </font
+                ></font>
+              </div>
+
+              <p class="card-text mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-1.jpg"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Explore</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Jobs Opportunity</font
+                  ></font
+                >
+              </h3>
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"><br /></font
+                ></font>
+              </div>
+              <p class="mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-2.jpg"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Test</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Coding skills</font
+                  ></font
+                >
+              </h3>
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"><br /></font
+                ></font>
+              </div>
+              <p class="mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-3.jpg"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Fourth card -->
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Learn</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Coding Facts</font
+                  ></font
+                >
+              </h3>
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"><br /></font
+                ></font>
+              </div>
+              <p class="mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-4.png"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Fifth car -->
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Learn</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">
+                    Coding for kids</font
+                  ></font
+                >
+              </h3>
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"><br /></font
+                ></font>
+              </div>
+              <p class="mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-5.png"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Sixth card` -->
+        <div class="col-md-6 my-4">
+          <div
+            class="
+              row
+              g-0
+              border
+              rounded
+              overflow-hidden
+              flex-md-row
+              mb-4
+              shadow-sm
+              h-md-250
+              position-relative
+            "
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Explore</font></font
+                ></strong
+              >
+              <h3 class="mb-0">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Coding refrences</font
+                  ></font
+                >
+              </h3>
+              <div class="mb-1 text-muted">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> <br /></font
+                ></font>
+              </div>
+              <p class="mb-auto">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >This is a broader card with supporting text below as a
+                    natural introduction to additional content.</font
+                  ></font
+                >
+              </p>
+              <a href="#" class="stretched-link"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Know more</font></font
+                ></a
+              >
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="Images/card-img-6.jpeg"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="290"
+                role="img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The footer -->
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="./Website-Using-Bootstrap.html" class="nav-link px-2 text-muted"> <b>Home</b> </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><b>Features</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><b>Pricing</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><b>FAQs</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="./About-bootstrap.html" class="nav-link px-2 text-muted"
+              ><b>About Us</b></a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted"><b>© 2021 Company, Inc</b></p>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -2,11 +2,11 @@
 All files of web development while I was learnint it.The website is built using HTML, CSS, Pug and JavaScript and is hosted on GitHub Pages.
 
 ## Features
-- Many conceconcepts of HTML5
-- Many conceconcepts of CSS3
-- Many conceconcepts of Javascript
-- Many conceconcepts of Pug
-- 
+- Many concepts of HTML5
+- Many concepts of CSS3
+- Many concepts of Javascript
+- Many concepts of Pug
+- And some concept bootstrap 
 
 
 

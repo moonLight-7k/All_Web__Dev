@@ -13,7 +13,7 @@ All files of web development while I was learnint it.The website is built using 
 
 ## Getting Started
 1. Clone or download the repository.
-2. Open the index.html file in your browser.
+2. Open the file in your browser or text editor.
 3. Explore the website and learn more about me!
 
 ## Contributing
